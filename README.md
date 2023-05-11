@@ -1,14 +1,19 @@
-El proyecto puede ser iniciado con el comando
-$ npm test
+# clase 22 - Segunda practica integradora
 
-MONGODB_CNX_STR = 'mongodb://127.0.0.1:27017/ecommerce')
+** El proyecto puede ser iniciado con el comando **
+> $ npm test
 
-Las sesiones duran 3 minutos!
-store: MongoStore.create({ mongoUrl: MONGODB_CNX_STR, ttl: 3*60 })
+** Config Mongo local **
+> MONGODB_CNX_STR = 'mongodb://127.0.0.1:27017/ecommerce')
 
-🚧🚧🚧🚧🚧🚧🚧🚧
-##se deben cargar los datos en auth.confif.js que se encuentra en src\config\auth.config.js
-export const githubAppId = 0000000000000000000
+<sub> Las sesiones duran 3 minutos! </sub>
+<sub> store: MongoStore.create({ mongoUrl: MONGODB_CNX_STR, ttl: 3*60 }) </sub>
+
+### 🚧🚧🚧🚧🚧🚧🚧🚧
+### se deben cargar los datos en auth.confif.js que se encuentra en src\config\auth.config.js
+```
+export const githubAppId = 0
 export const githubClienteId = ''
 export const githubClientSecret = ''
 export const githubCallbackUrl = 'http://localhost:8080/sessions/githubcallback'
+```
